@@ -1,0 +1,167 @@
+/* 
+Selector de etiqueta: <body>
+Aplica estilos generales a todo el cuerpo del documento.
+*/
+body {
+    font-family: "Segoe UI", "Comic Sans MS", cursive, sans-serif; /* Establece fuentes amigables y redondeadas */
+    background: linear-gradient(to bottom right, #ffd6e0, #ffe2f5); /* Fondo en degradado de rosa pastel */
+    color: #4a4a4a; /* Color de texto gris oscuro */
+
+   /*
+   Parámetros background:
+   - linear-gradient: crea un fondo degradado lineal (de un color a otro en línea recta).
+   - to bottom right: la dirección del degradado va desde la esquina superior izquierda hacia la esquina inferior derecha.
+   - #ffd6e0: color inicial (rosado pastel).
+   - #ffe2f5: color final (rosado aún más claro).
+   */
+}
+
+/* 
+Selector de clase: .container
+Se aplica a cualquier elemento con class="container"
+Define el área principal del contenido.
+*/
+.container {
+    width: 700px; /* Ancho fijo */
+    margin: 30px auto; /* Centrado horizontal y espacio superior e inferior */
+    background-color: #fff0f5; /* Fondo rosa claro */
+    padding: 25px; /* Relleno interior */
+    border-radius: 20px; /* Bordes redondeados */
+    box-shadow: 0 0 10px #f5a9c4; /* Sombra suave alrededor */
+    border: 2px solid #ffc1da; /* Borde rosa pastel */
+
+    /* 
+   Parámetros box shadow:
+   - 0 (desplazamiento horizontal): la sombra no se mueve a los lados.
+   - 0 (desplazamiento vertical): la sombra no se mueve hacia arriba o abajo.
+   - 8px (blur): el nivel de difuminado; entre más grande, más suave y expandida se ve la sombra.
+   - rgba(255, 182, 193, 0.3): color rosado claro con un 30% de opacidad (transparente).
+   */
+}
+
+/* 
+Selector de etiqueta: <h1>
+Estiliza títulos principales.
+*/
+h1 {
+    text-align: center; /* Centra el texto */
+    color: #d63384; /* Color rosa fuerte */
+    font-size: 32px; /* Tamaño de fuente grande */
+    margin-bottom: 20px; /* Espacio debajo del título */
+}
+
+/* 
+Selector de etiqueta: <a>
+Estiliza todos los enlaces normales.
+*/
+a {
+    color: #d63384; /* Color rosa fuerte */
+    text-decoration: none; /* Elimina subrayado */
+    font-weight: bold; /* Texto en negrita */
+    display: inline-block; /* Permite aplicar márgenes */
+    margin-top: 30px; /* Espacio superior */
+    margin-left: 10px; /* Espacio izquierdo */
+}
+
+/* 
+Selector de pseudo-clase: a:hover
+Aplica cuando el puntero está sobre el enlace.
+*/
+a:hover {
+    text-decoration: underline; /* Subraya al pasar el mouse */
+}
+
+/* 
+Selector de etiqueta: <table>
+Aplica a todas las tablas HTML.
+*/
+table {
+    width: 100%; /* Ancho total del contenedor */
+    border-collapse: collapse; /* Elimina espacios entre celdas */
+    margin-top: 15px; /* Espacio superior */
+    background-color: #ffffff; /* Fondo blanco */
+    border-radius: 12px; /* Bordes redondeados */
+    box-shadow: 0 0 8px rgba(255, 182, 193, 0.3); /* Sombra suave rosa */
+}
+
+/* 
+Selector de etiqueta: <th> (encabezado de tabla)
+*/
+th {
+    background-color: #fcbfdc; /* Fondo rosa pastel */
+    color: #6d214f; /* Texto color vino */
+    padding: 10px; /* Espacio interno */
+    font-size: 16px; /* Tamaño de letra */
+}
+
+/* 
+Selector de etiqueta: <td> (celda de tabla)
+*/
+td {
+    padding: 10px; /* Espacio interno */
+    text-align: center; /* Centrado de texto */
+    border-bottom: 1px solid #ffe0ec; /* Línea rosa debajo */
+    font-size: 14px; /* Tamaño de fuente moderado */
+}
+
+/* 
+Selector combinado con pseudo-clase estructural: tr:nth-child(even)
+Selecciona filas pares (segunda, cuarta, etc.)
+*/
+tr:nth-child(even) {
+    background-color: #fff7fa; /* Fondo ligeramente rosado */
+}
+
+/* 
+Selector de atributo combinado con etiqueta:
+<input type="text">, <input type="email">, <input type="password">
+Estiliza los campos de texto del formulario.
+*/
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 650px; /* Ancho fijo */
+    padding: 10px; /* Relleno interno */
+    margin-bottom: 15px; /* Espacio inferior entre campos */
+    margin-left: 10px; /* Espacio izquierdo para alinear con etiquetas */
+    border: 2px solid #fbb1d9; /* Borde rosado */
+    border-radius: 10px; /* Bordes redondeados */
+    background-color: #fffafc; /* Fondo muy claro rosado */
+    font-size: 14px; /* Tamaño de letra */
+}
+
+/* 
+Selector de atributo + pseudo-clase: focus
+Se aplica cuando el input está seleccionado (activo)
+*/
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: #d63384; /* Cambia el borde a rosa fuerte */
+    outline: none; /* Elimina el borde azul del navegador */
+    background-color: #fff0f7; /* Fondo más rosado al enfocar */
+}
+
+/* 
+Selector de atributo para el botón de envío
+<input type="submit">
+*/
+input[type="submit"] {
+    background-color: #d63384; /* Fondo rosa fuerte */
+    color: white; /* Texto blanco */
+    padding: 10px 20px; /* Relleno vertical y horizontal */
+    border: none; /* Sin borde */
+    border-radius: 15px; /* Bordes redondeados */
+    font-size: 14px; /* Tamaño de texto */
+    cursor: pointer; /* Cursor tipo "mano" */
+    margin-top: 5px; /* Espacio superior */
+    margin-left: 10px; /* Espacio izquierdo */
+}
+
+/* 
+Pseudo-clase: hover en botón
+Cambia el fondo cuando el mouse pasa por encima.
+*/
+input[type="submit"]:hover {
+    background-color: #b92d6c; /* Tono más oscuro de rosa */
+}
